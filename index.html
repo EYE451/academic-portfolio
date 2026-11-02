@@ -304,17 +304,60 @@ int main() {
         </tfoot>
     </table>
 </section>
+
 <section id="contact">
-<h2>Contact</h2>
+<h2> contact me</h2>
+<p> do u have any question or opportunity send me a message bellow!</p>
+
+<form action="#" method="post">
+    <p>
+        <label for="full-name">full name</label><br>
+        <input type="text" id="full-name" name="full-name" placeholder="e.g. Eyerusalem Hailu" requierd minlength="3">
+    </p>
+  <p>
+        <label for="email-address">email address</label><br>
+        <input type="email" id="email-address" name="email" placeholder="e.g .eyerusalem@example.com" required>
+    </p>
+
+    <p>
+        <label for="subject-select">reason for contact</label>
+        <select id="subject-select" name="subject">
+           <option value="general">general inquiry</option>
+           <option value="project">project collaboration</option>
+           <option value="other">other</option>         
+        </select>
+    </p>
+
+    <fieldset>
+        <legend>preferred contact method</legend>
+        <label>
+            <input type="radio" name="preferred_contact" value="email" checked>email
+        </label>
+        <label>
+            <input type="radio" name="preferred_contact" valu="phone" >phone
+        </label>
+    </fieldset>
+    <br>
+
+    <p>
+        <label for="message">message </label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="write your message here...." required></textarea>
+    </p>
+
+    <p>
+        <button type="submit">send message</button>
+    </p>
+    </form>
+<!--<h2>Contact</h2>
     <p>Address:<br>Addis Ababa, <br>Ethiopia</p>
 
     <p>Email: <a href="mailito:jeruher21a@gmail.com">jeruhera21@gmail.com</a></p>
 
     <p>Phone: <a href="tel:+251923991276">+251 923991276</a></p>
 
-    <p>GitHub: <a href="https://github.com/EYE451" target="_blank">github.com/EYE451</a></p>
+    <p>GitHub: <a href="https://github.com/EYE451" target="_blank">github.com/EYE451</a></p>-->
 
-    <p><a href="files/cv.pdf" download>Download my CV (PDF)</a></p>
+    <p><a href="files/cv.pdf" download> or Download my CV (PDF)</a></p>
 
      <h3>Connect with me</h3>
 

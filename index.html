@@ -15,7 +15,13 @@
     <h1> Eyesrusalem Hailu</h1>
     <img src="images/profile.jpg" alt="profile of Eyerusalem Hailu" tittle="Eyerusalem Hailu" width="200" height="200">
     <p>Software engneering student and aspiring web developer.</p>
-
+<button type="button" onclick="document.getElementById('hireDialog').showModal()">Hire Me</button>
+<dialog>
+    <h2>Available for internships</h2>
+    <p>i am available for sofware enginnering internships and web development projects.</p>
+    <p><a href="#contact">send me a message</a>or<a href="files/cv.pdf">download my cv</a></p>
+    <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+</dialog>
     <nav>
      <a href=" #about">About</a>|
      <a href=" #skills">skills</a>|
@@ -82,7 +88,19 @@ Learning Software Engineering During the Era of AI " allowfullscreen>
 </ul>
 
 </ul>
-
+<h3> skill levels</h3>
+<p>
+    <label for="lvl-html">html/css</label>
+    <meter id="lvl-html" value="0.7" min="0" max="1">70%</meter>
+</p>
+<p>
+    <label for="lvl-cpp">c++</label>
+    <meter id="lvl-cpp" value="0.8" min="0" max="1">80%</meter>
+</p>
+<p>
+    <label for="lvl-js">javascript</label>
+    <meter id="lvl-js" value="0.1" min="0" max="1">10%</meter>
+</p>
 <h3>My Learning Roadmap</h3>
 <ol>
     <li>HTML structure and content</li>
@@ -103,7 +121,10 @@ Learning Software Engineering During the Era of AI " allowfullscreen>
        <dt>GitHub pages</dt>
        <dd> Hosts my live portfolio website on the web.</dd>
  </dl>
-
+<details>
+    <summary> click to see mt technical skills</summary>
+    <p>I work in C++ , semantic HTML5, responsive CSS (Flexbox/Grid), and relational database design.</p>
+</details>
 </section>
 <section id="projects">
     <h2>Projects</h2>
@@ -152,7 +173,10 @@ int main() {
     <h2>Education</h2>
     <h3>BSc in Software Engineering</h3>
     <p>Addis Ababa Science and Technology University, 2024-present</p>
-
+<p> 
+    <label for="degree">degree progress</label>
+    <progress id="degree" value="40" max="100">40%</progress>40%
+</p>
     <table border="1" cellpadding="8" cellspacing="0">
         <caption>Academic Record BSc in Software Engineering</caption>
         <thead>

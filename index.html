@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <canvas id="logo" width="120">Eyerusalem Hailu logo</canvas>
     <h1> Eyesrusalem Hailu</h1>
     <img src="images/profile.jpg" alt="profile of Eyerusalem Hailu" tittle="Eyerusalem Hailu" width="200" height="200">
     <p>Software engneering student and aspiring web developer.</p>
@@ -100,8 +101,10 @@ Learning Software Engineering During the Era of AI " allowfullscreen>
 </p>
 <p>
     <label for="lvl-js">javascript</label>
-    <meter id="lvl-js" value="0.1" min="0" max="1">10%</meter>
+  <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">20%</meter>
 </p>
+<h3>Skill Bar Chart</h3>
+<canvas id="skillChart" width="300" height="150">Skill proficiency bar chart</canvas>
 <h3>My Learning Roadmap</h3>
 <ol>
     <li>HTML structure and content</li>
@@ -460,5 +463,51 @@ int main() {
     <p>&copy; 2026 Eyerusalem Hailu. All rights reserved.</p>
     <p>last updated:<time datetime=2026-11-05>November 5 2026</time></p>
 </footer>
+<script>
+const canvas = document.getElementById('logo');
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = "#1f5fa8";
+ctx.fillRect(0, 0, 120, 120);
+
+ctx.beginPath();
+ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+
+ctx.fillStyle = "#1f5fa8";
+ctx.font = "bold 36px Arial";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("EH", 60, 62);
+</script>
+
+
+<script>
+const chart = document.getElementById('skillChart');
+const chartCtx = chart.getContext('2d');
+
+
+chartCtx.fillStyle = "#f4f4f4";
+chartCtx.fillRect(0, 0, 300, 150);
+
+
+chartCtx.fillStyle = "#1f5fa8";
+chartCtx.fillRect(50, 46, 50, 84);
+chartCtx.fillStyle = "#333";
+chartCtx.font = "12px Arial";
+chartCtx.fillText("HTML/CSS", 45, 145);
+
+
+chartCtx.fillStyle = "#1f5fa8";
+chartCtx.fillRect(125, 34, 50, 96);
+chartCtx.fillText("C++", 140, 145);
+
+chartCtx.fillStyle = "#1f5fa8";
+chartCtx.fillRect(200, 106, 50, 24);
+chartCtx.fillStyle = "#333";
+chartCtx.fillText("JS", 218, 145);
+</script>
 </body>
 </html>

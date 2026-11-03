@@ -32,6 +32,11 @@
 
     <p>i am a 3<sup>rd</sup> year <strong>Software Enginnering</strong>student.I <em>really</em> enjoy building web applications, and my current goal is to <mark>become a full-stack software engineer</mark>.</p>
     <p>funfact:I prefer coding late at night with a cup of hot tea while listening to music.than  drinking 2 liters of H<sub>2</sub>o .</p>
+    <h3>hear my introduction</h3>
+    <audio controls>
+        <source src="media/intro.mp3" type="audio/mpeg">
+    </audio>
+
  </section>
     
  <aside>
@@ -43,12 +48,16 @@
     <p> My teacher always says <q>practice beats theory</q>, so I build projects every week.</p>
     <p >Book I am reading: <cite>clean code </cite> by Robert C.Martin</p>
 
+<h3> A talk i recommend</h3>
+<iframe src="https://youtube.com/embed/w4rG5GY9IlA" width="400" height="200" title="YouTube video:
+Learning Software Engineering During the Era of AI " allowfullscreen>
+
+</iframe>
 </aside>
 <section id="skills">
 <h2>Skills</h2>
 
 <ul>
-
 <li>Programming Languages</li>
 
 <ul type="square">
@@ -306,8 +315,25 @@ int main() {
 </section>
 
 <section id="contact">
-<h2> contact me</h2>
-<p> do u have any question or opportunity send me a message bellow!</p>
+    <h3>contact</h3>
+    <p>Address:<br>AdissAbeba;<br>Ethiopia</p>
+    <p>Email: <a href="mailto:jeruhera21@gmail.com">jeruhera21@gmail.com</a></p>
+<p>Phone: <a href="tel:+251923991276">+251 923 991 276</a></p>
+<p>GitHub: <a href="https://github.com/EYE451" target="_blank">github.com/EYE451</a></p>
+    <p><a href="files/cv.pdf" download> or Download my CV (PDF)</a></p>
+
+     <h3>Connect with me</h3>
+
+    <img src="images/connect-banner.jpg"  alt="Connect banner: GitHub and Email" width="600" height="200">
+    
+    <h3>Where I study</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.940058128082!2d38.80975339999999!3d8.8851654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793742144792!5m2!1sen!2set"
+        width="600" height="300"
+        title="Map of my university campus">
+</iframe>
+
+<h2> send me a message!</h2>
+
 
 <form action="thank-you.html" method="post" enctype="multipart/form-data">
 
@@ -331,7 +357,7 @@ int main() {
             <optgroup label="work">
            <option value="general">general inquiry</option>
            <option value="project">project collaboration</option>
-           <option value="work">work</option>
+          
            </optgroup>
            <option value="other">other</option>         
         </select>
@@ -344,22 +370,25 @@ int main() {
         <input type="checkbox" id="copy" name="copy" value="yes">
         <label for="copy">send a copy of this message </label>
     </p>
-    <p>
-        <label for="budget">your budget (ETB):</label><br>
-        <input type="number" id="budget" name="budget" min="1000" step="500">
-    </p>
+   
 </fieldset>
 
     <fieldset>
-        <legend>preferred contact method:</legend>
+        <legend>project details</legend>
 
+       <p>
+            <label for="phone">Phone (optional):</label><br>
+            <input type="text" id="phone" name="phone" pattern="0[79][0-9]{8}" title="10 digits starting with 09 or 07">
+        </p>
+
+        <p>Preferred contact method:</p>
         <label>
-            <input type="radio" name="preferred_contact" value="email" checked>email
+            <input type="radio" id="by-email" name="preferred_contact" value="email" checked> Email
         </label>
         <label>
-            <input type="radio" name="preferred_contact" valu="phone" >phone
+            <input type="radio" id="by-phone" name="preferred_contact" value="phone"> Phone
         </label>
-        <br>
+        <br><br>
 
         <p>
             <label for="meeting">preferred meeting date:</label><br>
@@ -370,7 +399,10 @@ int main() {
          <label for="weeks">project length(weeks):</label> <br>
          <input type="number" id="weeks" name="weeks" min="1" max="50" step="1">  
         </p>
-
+ <p>
+        <label for="budget">your budget (ETB):</label><br>
+        <input type="number" id="budget" name="budget" min="1000" step="500">
+    </p>
         <p>
         <label for="brief"> send a project brief</label><br>
         <input type="file" id="brief" name="brief">
@@ -387,18 +419,14 @@ int main() {
         </p>
     </fieldset>
     <br>
-    
+
     <p>
         <button type="submit">send message</button>
         <button type="reset">clear</button>
     </p>
     </form>
 
-    <p><a href="files/cv.pdf" download> or Download my CV (PDF)</a></p>
 
-     <h3>Connect with me</h3>
-
-    <img src="images/connect-banner.jpg"  alt="Connect banner: GitHub and Email" width="600" height="200">
     </section>
    
 </main>
